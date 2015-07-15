@@ -4,25 +4,33 @@
     <meta charset="utf-8">
     <title>Quiz: Preguntas</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' 
+          media='only screen and (max-width: 530px) and (min-width: 481px)'
+          href='/stylesheets/wide.css' />
+    <link rel='stylesheet'
+          media='only screen and (max-width: 480px)'
+          href='/stylesheets/smartphone.css' />
     <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   </head>
   <body>
-    <header>
-      <h1>Quiz: el juego de las preguntas</h1>
-    </header>
+    <div id="page">
+      <header class="main">
+        <h1>Quiz<span>: el juego de las preguntas</span></h1>
+      </header>
 
-    <nav>
-      <span><a href="/">Ir a inicio</a></span>
-      <span><a href="/quizes/question">Ir a preguntas</a></span>
-    </nav>
+      <nav class="main" role="navigation">
+        <span><a href="/">Ir a inicio</a></span>
+        <span><a href="/quizes/question">Ir a preguntas</a></span>
+      </nav>
 
-    <section>
-      <%- body %>
-    </section>
+      <section class="main">
+        <%- body %>
+      </section>
 
-    <footer>
-      <p>Bienvendo a nuestra pagina :D</p>
-    </footer>
+      <footer class="main">
+        <p>Bienvendo a nuestra pagina :D</p>
+      </footer>
+    </div>
   </body>
 </html>
 
